@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    word-spacing: 1.4px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(232, 230, 230);
+}
+  
+/*** BOX COLORS ***/
+.blue {
+    background-color: rgb(57, 57, 234);
+}
+
+.red {
+    background-color: rgb(248, 80, 80);
+}
+
+.yellow {
+    background-color: rgb(254, 254, 68);
+    border: 3px solid darkorange;
+}
+
+.green {
+    background-color: green;
+}
+
+.violet {
+    background-color: violet;
+}
+
+.lightblue {
+    background-color: lightskyblue;
+}
+
+
+.lightcyan {
+    background-color: lightcyan;
+}
+/*** BOX COLORS ***/
+
+
+section#css-position {
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 24rem;
+}
+
+.grid-container {
+    /* position: relative; */
+    display: grid;
+    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(4, 150px);
+    grid-gap: 1em;
+    border: 0.5rem solid beige;
+    flex-wrap: wrap;
+
+ 
+}
+
+.grid-item {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    /** number layout **/
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /** number layout **/
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+
+.active {
+    position: sticky;
+    top: 20px;
+    
+    
+    
+}
+
+
+/* STICKY */
+header {
+    position: sticky;
+    top: 0;
+    text-align:  center;
+    font-size: 2rem;
+    height: 8rem;
+}
+
+h2 {
+    height: 100vh;
+}
+
+
+
+/*FLEXBOX*/
+
+.flex-between {
+    height: 16rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: start;
+    border: 0.2rem solid black;
+    margin-bottom: 1rem;
+
+}
+
+
+.flex-item {
+    background-color: lightskyblue;
+    width: 12rem; /*150px*/
+    height: 3rem;
+    text-align: center;
+    border: 2px solid blue;
+}
+
+.flex-item:first-child {
+    
+}
+
+.flex-item:nth-child(2) {
+    align-self: center;
+}
+
+.flex-item:last-child {
+    
+    
+}
+/** DEMO **/
+
+.flexbox-main {
+    display: flex;
+    width: 100vw;
+    justify-content: start;
+    background-color: darkgray;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+.image-logo {
+    
+}
+.flexbox-grow {
+    flex-grow: 2;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 1rem;
+}
+
+ul li {
+    list-style-type: none;
+    color: green;
+}
+
+
+/* GRID */
+.container{
+    width: 80%;
+    height:80%;
+    border: 5px solid black;
+    display: grid;
+    margin-inline: auto;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr,1fr,1fr;
+}
+
+/* GRID ALIGN */
+.item-1 {
+    background-color: rgb(7, 249, 43);
+    border-color: rgb(78, 3, 56);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+  }
+  .item-2 {
+    background-color: rgb(7, 176, 27);
+    border-color: rgb(78, 3, 56);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .item-3 {
+    background-color: rgb(255, 0, 0);
+    border-color: rgb(78, 3, 56);
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .item-4 {
+    background-color: rgb(249, 144, 7);
+    border-color: rgb(78, 3, 56);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .item-5 {
+    background-color: rgb(249, 7, 7);
+    border-color: rgb(78, 3, 56);
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .item-6 {
+    background-color: rgb(100, 249, 7);
+    border-color: rgb(78, 3, 56);
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 6;
+  }
+
+  .item-7 {
+    background-color: rgb(249, 7, 7);
+    border-color: rgb(78, 3, 56);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 6;
+  }
+
+  .item-8 {
+    background-color: rgb(249, 160, 7);
+    border-color: rgb(78, 3, 56);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 6;
+  }
+  
+  .container1 {
+    height: 450px;
+    width: 500px;
+    display: grid;
+    margin-inline: auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "area-1 area-1 area-1 area-1 area-1"
+      "area-2 area-4 area-4 area-4 area-3"
+      "area-2 area-4 area-4 area-4 area-3"
+      "area-2 area-4 area-4 area-4 area-3"
+      "area-5 area-5 area-5 area-5 area-3";
+  }
+
+  .item-9 {
+    background-color: rgb(68, 68, 68);
+    border-color: rgb(255, 255, 255);
+    grid-area: area-1;
+    border-radius: 1rem;
+    text-align: center;
+    
+  }
+  .item-10 {
+    background-color: rgb(68, 68, 68);
+    border-color: rgb(255, 255, 255);
+    grid-area: area-2;
+    border-radius: 1rem;
+    text-align: center;
+    
+  }
+  .item-11 {
+    background-color: rgb(68, 68, 68);
+    border-color: rgb(255, 255, 255);
+    grid-area: area-3;
+    border-radius: 1rem;
+    text-align: center;
+    
+  }
+  .item-12 {
+    background-color: rgb(68, 68, 68);
+    border-color: rgb(255, 255, 255);
+    grid-area: area-4;
+    border-radius: 1rem;
+    text-align: center;
+    
+  }
+  .item-13 {
+    background-color: rgb(68, 68, 68);
+    border-color: rgb(255, 255, 255);
+    grid-area: area-5;
+    border-radius: 1rem;
+    text-align: center;
+    
+  }
+  
+/* GRID TEMPLATING */
+/* GRID BRADLEY VALLE */
+/* GRID ACTIVITY */
+
+
+
+
